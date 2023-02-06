@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <>
       <div className="main">
-        <h1>HomePage Component</h1>
+        <h1>Home Page Component</h1>
       </div>
     </>
   );
