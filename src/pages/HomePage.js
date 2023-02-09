@@ -1,14 +1,34 @@
 // components
 import React from "react";
+import AMCImage from "../img/auburn-medical-front.jpg";
 
 // Chakra components
-import { Box, Text, HStack, Button, Flex } from "@chakra-ui/react";
+import { Box, Text, HStack, Button, Flex, Image } from "@chakra-ui/react";
 
 export default function HomePage() {
   return (
-    <Box as="section" bg="gray.100" h="500">
+    <Box bg="gray.200">
       <Flex justify="center">
-        <Text>Home Page Component</Text>
+        <Box as="section" bg="gray.500">
+          <Box as="figure">
+            <Image
+              src={AMCImage}
+              alt="Auburn Medical Center building"
+              h="500"
+              w="4xl"
+            />
+            <Box>
+              <Text
+                textAlign="center"
+                fontSize="2xl"
+                fontWeight="bold"
+                color="white"
+              >
+                Questions About Your Patient Portal Account?
+              </Text>
+            </Box>
+          </Box>
+        </Box>
       </Flex>
     </Box>
   );
