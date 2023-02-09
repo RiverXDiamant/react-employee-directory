@@ -1,9 +1,13 @@
+// components
+import React from "react";
+
+// Chakra components
+import { Box, Text, HStack, Button, Flex } from "@chakra-ui/react";
+
 export default function HomePage() {
   return (
-    <>
-      <div className="main">
-        <h1>Home Page Component</h1>
-      </div>
-    </>
+    <Box>
+      <Text>HomePage Component</Text>
+    </Box>
   );
 }
