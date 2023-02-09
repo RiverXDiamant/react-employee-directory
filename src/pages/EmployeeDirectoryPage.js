@@ -3,7 +3,7 @@
 // import { Link } from "react-router-dom";
 // import EmployeePage from "../pages/EmployeePage";
 
-export default function employeeDirectoryPage() {
+export default function EmployeeDirectoryPage() {
   return (
     <>
       <div className="directoryPage">
