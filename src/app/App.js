@@ -5,6 +5,7 @@ import Nav from "../components/Navigation/Nav";
 import HomePage from "../pages/HomePage";
 import EmployeeDirectoryPage from "../pages/EmployeeDirectoryPage";
 import EmployeePage from "../pages/EmployeePage";
+import Footer from "../components/Footer/Footer.js";
 
 // css
 import "../css/App.css";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/directory" element={<EmployeeDirectoryPage />} />
         <Route path="/employeepage/:directory" element={<EmployeePage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
