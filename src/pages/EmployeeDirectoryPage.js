@@ -1,14 +1,19 @@
-// route and components
-// import { Route, Routes } from "react-router-dom";
-// import { Link } from "react-router-dom";
+// components
+import { Link } from "react-router-dom";
+
+// Chakra components
+import { Box, Flex, Text, Stack } from "@chakra-ui/react";
 // import EmployeePage from "../pages/EmployeePage";
 
 export default function EmployeeDirectoryPage() {
   return (
-    <>
-      <div className="directoryPage">
-        <h1> Employee Directory Page Component</h1>
-      </div>
-    </>
+    <Box as="section" bg="gray.100" h="500">
+      <Flex justify="center">
+        <Stack>
+          <Text>Employee Directory Page Component</Text>
+          <Link to="/employeepage/:directory">Single Employee Page Link</Link>
+        </Stack>
+      </Flex>
+    </Box>
   );
 }
