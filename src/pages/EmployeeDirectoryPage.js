@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 // Chakra components
-import { Box, Flex, Text, Stack } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
 // import EmployeePage from "../pages/EmployeePage";
 
 export default function EmployeeDirectoryPage() {
@@ -11,7 +11,11 @@ export default function EmployeeDirectoryPage() {
       <Flex justify="center">
         <Stack>
           <Text>Employee Directory Page Component</Text>
-          <Link to="/employeepage/:directory">Single Employee Page Link</Link>
+          <Link to="/employeepage/:directory">
+            <Button bg="blue.700" color="white">
+              Employee Page Test
+            </Button>
+          </Link>
         </Stack>
       </Flex>
     </Box>
