@@ -8,7 +8,7 @@ import { Box, Flex, Image } from "@chakra-ui/react";
 
 export default function HomePage() {
   return (
-    <Box bg="gray.200">
+    <Box>
       <Flex justify="center">
         <Box as="figure">
           <Image
