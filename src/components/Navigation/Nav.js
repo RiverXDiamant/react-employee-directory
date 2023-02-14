@@ -1,10 +1,11 @@
 // components
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 import AMCLogo from "../../img/auburn-medical-logo.png";
 
 // Chakra components
-import { Box, Flex, Text, HStack, Image, Button } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Button } from "@chakra-ui/react";
 
 export default function Nav() {
   return (
@@ -21,17 +22,16 @@ export default function Nav() {
                   w="300"
                 />
               </Box>
-              <Text>
-                <Link to="/">Care and Treatment</Link>
-              </Text>
+              <FaHome />
+              <Link to="/"> Home |</Link>
               &nbsp;&nbsp;
-              <Text>
-                <Link to="/directory">Provider Directory</Link>
-              </Text>
+              <Link to="/">Care and Treatment |</Link>
               &nbsp;&nbsp;
-              <Link to="/">Patient and Visitor Info</Link>
+              <Link to="/directory">Provider Directory |</Link>
               &nbsp;&nbsp;
-              <Link to="/">About Us</Link>
+              <Link to="/">Patient and Visitor Info |</Link>
+              &nbsp;&nbsp;
+              <Link to="/">Contact Us</Link>
               <Link to="/">
                 <Button
                   size="md"
