@@ -1,13 +1,12 @@
 // components
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaBookMedical,
   FaAddressBook,
   FaMoneyCheckAlt,
   FaHospital,
 } from "react-icons/fa";
-
-import { Link } from "react-router-dom";
 
 import { Box, Text, Flex, Stack, Button } from "@chakra-ui/react";
 
@@ -25,9 +24,9 @@ export const ListItem = (props) => {
 
 export default function CareOptions() {
   return (
-    <Box bg="gray.300" h="300" w="4xl" mt="10" textAlign="center">
+    <Box h="200" w="4xl" mt="10" textAlign="center">
       <Flex justify="center">
-        <Box bg="blue.200" h="100" mr="5">
+        <Box h="100" mr="5">
           <Link to="/directory">
             <Button colorScheme="blue" size="lg">
               <FaBookMedical /> &nbsp;&nbsp;Find A Doctor
@@ -37,7 +36,7 @@ export default function CareOptions() {
           <Text as="p">Choose a Provider</Text>
         </Box>
 
-        <Box bg="blue.200" h="100" mr="5">
+        <Box h="100" mr="5">
           <Button colorScheme="blue" size="lg">
             <FaAddressBook />
             &nbsp;&nbsp; MyChart
@@ -45,7 +44,7 @@ export default function CareOptions() {
           <Text as="p">Login or Sign Up</Text>
         </Box>
 
-        <Box bg="blue.200" h="200" mr="5">
+        <Box h="200" mr="5">
           <Button colorScheme="blue" size="lg">
             <FaMoneyCheckAlt />
             &nbsp;&nbsp; Pay Your Bill
@@ -67,7 +66,6 @@ export default function CareOptions() {
             <FaHospital />
             &nbsp;&nbsp; Location
           </Button>
-          <Text>Lorem</Text>
         </Box>
       </Flex>
     </Box>
