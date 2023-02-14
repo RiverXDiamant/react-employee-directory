@@ -23,6 +23,9 @@ export default function HomePage() {
       <Flex justify="center">
         <CareOptions />
       </Flex>
+      <Flex justify="center">
+        <Box as="hr" bg="blue.700" h="0.5" w="4xl" mb="20"></Box>
+      </Flex>
     </Box>
   );
 }
