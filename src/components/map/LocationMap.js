@@ -17,7 +17,6 @@ export default function LocationMap() {
     // Important! Always set the container height explicitly
     <Box style={{ height: "100vh", width: "100%" }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyDjzL7Z4pu2aTS6rgYHgEzbHE8tROrXiJI" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
