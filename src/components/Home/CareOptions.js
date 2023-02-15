@@ -37,10 +37,17 @@ export default function CareOptions() {
         </Box>
 
         <Box h="100" mr="5">
-          <Button colorScheme="blue" size="lg">
-            <FaAddressBook />
-            &nbsp;&nbsp; MyChart
-          </Button>
+          <Link
+            to={{ pathname: "https://mychart.org/" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button colorScheme="blue" size="lg">
+              <FaAddressBook />
+              &nbsp;&nbsp; MyChart
+            </Button>
+          </Link>
+
           <Text as="p">Login or Sign Up</Text>
         </Box>
 
@@ -61,11 +68,21 @@ export default function CareOptions() {
           </ListItem>
         </Box>
 
-        <Box bg="blue.200" h="300" mr="5">
+        <Box h="200" mr="5">
           <Button colorScheme="blue" size="lg">
             <FaHospital />
-            &nbsp;&nbsp; Location
+            &nbsp;&nbsp; Locations
           </Button>
+
+          <ListItem>
+            <Link to="/">Atlanta</Link>
+          </ListItem>
+          <ListItem>
+            <Link to="/">Powder Springs</Link>
+          </ListItem>
+          <ListItem>
+            <Link to="/">College Park</Link>
+          </ListItem>
         </Box>
       </Flex>
     </Box>
