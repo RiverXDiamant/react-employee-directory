@@ -24,7 +24,9 @@ export default function RightSectionPrivacy() {
       <Flex justify="end" mr="3">
         <Box>
           <Link to="/">
-            <Text color="white">LEARN MORE</Text>
+            <Text color="white" fontWeight="bold">
+              LEARN MORE
+            </Text>
           </Link>
         </Box>
       </Flex>
