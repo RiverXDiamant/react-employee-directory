@@ -17,6 +17,11 @@ export default function Header() {
           </Link>
         </Text>
       </Flex>
+
+      <Flex justify="center">
+        If you have a medical emergency, visit one of our&nbsp;&nbsp;
+        <Link>Emergency Care Centers</Link>
+      </Flex>
     </Box>
   );
 }
