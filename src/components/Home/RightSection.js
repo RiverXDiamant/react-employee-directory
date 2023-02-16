@@ -1,6 +1,6 @@
 //components
 
-import { Heading, Box, Flex, Text, Link } from "@chakra-ui/react";
+import { Heading, Box, Flex, Text } from "@chakra-ui/react";
 
 export default function RightSectionPrivacy() {
   return (
