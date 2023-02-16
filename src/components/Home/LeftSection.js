@@ -14,16 +14,16 @@ export default function LeftSectionBio() {
         <Box as="hr" bg="blue.200" h="0.5" w="10" mb="2" mt="3"></Box>
       </Flex>
 
-      <Box h="200" mt="5" mb="-3">
+      <Box h="200" mt="2" mb="-3">
         <Text fontSize="xl" fontWeight="light" color="white" ml="2">
           We are here to work with you every step of the way to keep our
           communities healthy. At your service are our nationally recognized
           physicians, lead-edge technology and world-class facilities.
-          Excellence, caring and integrity guid our everyday behaviors.
+          Excellence, caring and integrity guide our everyday behaviors.
         </Text>
       </Box>
 
-      <Flex justify="end" mr="3">
+      <Flex justify="end" mr="3" mt="4">
         <Box>
           <Link to="/">
             <Text color="white" fontWeight="bold">
