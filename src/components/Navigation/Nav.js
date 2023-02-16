@@ -1,6 +1,7 @@
 // components
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { FaHome } from "react-icons/fa";
 import AMCLogo from "../../img/auburn-medical-logo.png";
 
@@ -25,11 +26,25 @@ export default function Nav() {
               <FaHome />
               <Link to="/"> Home |</Link>
               &nbsp;&nbsp;
-              <Link to="/">Care and Treatment |</Link>
+              <NavHashLink
+                to="/#care-options"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "end" })
+                }
+              >
+                Care and Treatment |
+              </NavHashLink>
               &nbsp;&nbsp;
-              <Link to="/directory">Provider Directory |</Link>
+              <Link to="/directory">Employee Directory |</Link>
               &nbsp;&nbsp;
-              <Link to="/">Patient and Visitor Info |</Link>
+              <NavHashLink
+                to="/#info"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
+              >
+                Patient and Visitor Info |
+              </NavHashLink>
               &nbsp;&nbsp;
               <Link to="/">Contact Us</Link>
               <Link to="/">
