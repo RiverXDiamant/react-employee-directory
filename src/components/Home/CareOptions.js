@@ -24,7 +24,7 @@ export const ListItem = (props) => {
 
 export default function CareOptions() {
   return (
-    <Box h="200" w="4xl" mt="10" textAlign="center">
+    <Box id="care-options" h="200" w="4xl" mt="10" textAlign="center">
       <Flex justify="center">
         <Box h="100" mr="5">
           <Link to="/directory">
