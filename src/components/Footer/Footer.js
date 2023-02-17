@@ -13,6 +13,8 @@ export default function Footer() {
   return (
     <Box as="footer" h="500" mr="10">
       <Flex justify="center">
+        {/* Column: Footer Logo*/}
+
         <Box h="250" w="200" mr="5" borderRight="1px">
           <Image
             src={AMCFooterLogo}
@@ -36,10 +38,18 @@ export default function Footer() {
           </Flex>
         </Box>
 
+        {/* Column 1*/}
+
         <Box id="amc-health" borderRight="1px" w="250px" mr="5">
           <Flex justify="center">
             <Stack id="info">
-              <Text as="h3" fontSize="xl" fontWeight="bold" color="blue.600">
+              <Text
+                as="h3"
+                textAlign="center"
+                fontSize="xl"
+                fontWeight="bold"
+                color="blue.600"
+              >
                 AMC Health
               </Text>
               <Flex justify="center">
@@ -73,6 +83,8 @@ export default function Footer() {
             </Stack>
           </Flex>
         </Box>
+
+        {/* Column 2*/}
 
         <Box id="resources" borderRight="1px" w="250px" mr="5">
           <Flex justify="center">
@@ -113,6 +125,8 @@ export default function Footer() {
             </Stack>
           </Flex>
         </Box>
+
+        {/* Column 3*/}
 
         <Box id="policies" borderRight="1px" w="250px" mr="5">
           <Flex justify="center">
