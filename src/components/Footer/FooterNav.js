@@ -1,5 +1,7 @@
 // components
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
+import { FaArrowCircleUp } from "react-icons/fa";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 export default function FooterNav() {
@@ -48,6 +50,21 @@ export default function FooterNav() {
           <Text fontSize="sm" color="gray.500">
             &copy; Auburn Medical Center 2023 - All Rights Reserved
           </Text>
+        </Flex>
+      </Box>
+
+      <Box>
+        <Flex justify="end">
+          <NavHashLink
+            to="#top"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth" }).fadeIn("200")
+            }
+          >
+            <Text fontSize="2xl">
+              <FaArrowCircleUp />
+            </Text>
+          </NavHashLink>
         </Flex>
       </Box>
     </Box>
